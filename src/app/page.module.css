@@ -451,9 +451,21 @@
   }
 }
 
+/* About Section Grid */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.navBtn {
+  display: flex;
+}
+
 /* Stats (New Classes) */
 .statsContainer {
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   padding: 3rem 0;
   flex-wrap: wrap;
@@ -463,4 +475,20 @@
 .statItem {
   text-align: center;
   min-width: 140px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* ... existing styles ... */
+
+  .navBtn {
+    display: none !important;
+    /* Hide contact button on mobile to fix spacing */
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr !important;
+    /* Stack columns */
+    gap: 3rem !important;
+  }
 }

@@ -30,7 +30,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
-          <div className={styles.navLogo}>JG.</div>
+          <a href="#" className={styles.navLogo} style={{ textDecoration: 'none' }}>JG.</a>
 
           {/* Mobile Toggle Button */}
           <button className={styles.mobileMenuBtn} onClick={toggleMenu} aria-label="Menu">
@@ -46,7 +46,7 @@ export default function Home() {
             <a href="#contact" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Contact</a>
           </div>
 
-          <a href="mailto:jacques.giraudeau@gmail.com" className="btn btn-primary" style={{ fontSize: '0.9rem', display: isMenuOpen ? 'none' : 'flex' }}> {/* Hide CTA on mobile header if needed, or keep it */}
+          <a href="mailto:jacques.giraudeau@gmail.com" className={`btn btn-primary ${styles.navBtn}`} style={{ fontSize: '0.9rem' }}>
             Me Contacter
           </a>
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
 
       {/* About & Skills */}
       <section id="about" className="section container">
-        <div className="grid md:grid-cols-2 gap-12 items-start" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
+        <div className={styles.aboutGrid}>
           <div>
             <h2 className="section-title text-left" style={{ textAlign: 'left', marginBottom: '2rem' }}>À propos</h2>
             <p className="text-lg text-muted" style={{ lineHeight: '1.9', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem' }}>
