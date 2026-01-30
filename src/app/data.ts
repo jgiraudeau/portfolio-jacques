@@ -7,7 +7,7 @@ export const portfolioData = {
         phone: "06 14 02 83 68",
         location: "Marseille et périphérie / Cassis",
         linkedin: "https://www.linkedin.com/in/jacques-giraudeau-71539020",
-        websites: ["jacquesgiraudeau.fr", "esully.fr"],
+        websites: ["jacquesgiraudeau.com"],
         catchphrase: "Déployer un LMS ou former à l’IA ne pose pas de problème technique. Le vrai enjeu, c’est l’adoption par les équipes."
     },
     about: {
