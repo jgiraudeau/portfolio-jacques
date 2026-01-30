@@ -116,15 +116,15 @@ export default function Home() {
       <section id="about" className="section container">
         <div className="grid md:grid-cols-2 gap-12 items-start" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
           <div>
-            <h2 className="section-title text-left" style={{ textAlign: 'left' }}>À propos</h2>
-            <p className="text-lg text-muted mb-6">
+            <h2 className="section-title text-left" style={{ textAlign: 'left', marginBottom: '2rem' }}>À propos</h2>
+            <p className="text-lg text-muted" style={{ lineHeight: '1.9', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem' }}>
               {about.summary}
             </p>
-            <div className="space-y-3">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {about.certifications.map((cert, idx) => (
-                <div key={idx} style={{ display: 'flex', gap: '10px', marginBottom: '10px', alignItems: 'center' }}>
-                  <CheckCircle style={{ color: '#2563eb' }} size={18} />
-                  <span className="font-medium">{cert}</span>
+                <div key={idx} style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+                  <CheckCircle style={{ color: '#2563eb', flexShrink: 0 }} size={24} />
+                  <span className="font-medium" style={{ fontSize: '1.1rem', color: '#1e293b' }}>{cert}</span>
                 </div>
               ))}
             </div>
