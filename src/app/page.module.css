@@ -311,15 +311,19 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
   .heroContent {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .heroText {
     order: 2;
-    /* Put text below image on mobile */
   }
 
   .imageWrapper {
@@ -329,6 +333,16 @@
 
   .mobileMenuBtn {
     display: block;
+    color: #0f172a;
+    /* Force dark color */
+    margin-right: -8px;
+    z-index: 1002;
+    /* Ensure above everything */
+  }
+
+  .nav {
+    z-index: 1001;
+    /* Ensure nav bar is on top */
   }
 
   .navLinks {
@@ -340,10 +354,13 @@
     background: rgba(255, 255, 255, 0.98);
     flex-direction: column;
     justify-content: center;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 2rem;
     z-index: 1000;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+    padding: 2rem;
   }
 
   .navLinks.navActive {
@@ -357,40 +374,78 @@
 
   .titleMain {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .titleHighlight {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
   }
 
   .badges {
     justify-content: center;
+    margin-bottom: 2rem;
   }
 
   .heroButtons {
     justify-content: center;
+    gap: 0.75rem;
   }
 
   .profileImage {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     margin: 0 auto;
   }
 
+  /* Stats Section Mobile */
+  .statsContainer {
+    flex-direction: column !important;
+    gap: 3rem !important;
+    padding: 3rem 1rem !important;
+  }
+
+  /* Timeline */
   .timelineItem {
-    padding-left: 50px;
+    padding-left: 45px;
   }
 
   .timeline::before {
-    left: 15px;
+    left: 12px;
   }
 
   .timelineMarker {
-    left: 6px;
+    left: 3px;
   }
 
   .footerLinks {
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  /* Text Readability */
+  p {
+    line-height: 1.8 !important;
+  }
+}
+
+/* Stats (New Classes) */
+.statsContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.statItem {
+  text-align: center;
+  min-width: 140px;
 }

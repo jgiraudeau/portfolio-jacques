@@ -113,16 +113,16 @@ export default function Home() {
 
       {/* Stats / Quick Banner */}
       <section className="bg-slate-900 text-white py-12" style={{ background: '#0f172a', color: 'white' }}>
-        <div className="container flex flex-wrap justify-center md:justify-around gap-8 text-center" style={{ display: 'flex', justifyContent: 'space-around', padding: '3rem 0' }}>
-          <div>
+        <div className={styles.statsContainer}>
+          <div className={styles.statItem}>
             <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#60a5fa' }}>30+</div>
             <div style={{ opacity: 0.8 }}>Années d'Expérience</div>
           </div>
-          <div>
+          <div className={styles.statItem}>
             <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#60a5fa' }}>100%</div>
             <div style={{ opacity: 0.8 }}>Passion Pédagogique</div>
           </div>
-          <div>
+          <div className={styles.statItem}>
             <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#60a5fa' }}>Master 2</div>
             <div style={{ opacity: 0.8 }}>Ingénierie Formation</div>
           </div>
