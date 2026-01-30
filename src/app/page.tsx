@@ -135,7 +135,7 @@ export default function Home() {
       <section id="about" className="section container">
         <div className={styles.aboutGrid}>
           <div>
-            <h2 className="section-title text-left" style={{ textAlign: 'left', marginBottom: '2rem' }}>À propos</h2>
+            <h2 className="section-title text-left" style={{ textAlign: 'center', marginBottom: '2rem' }}>À propos</h2>
             <p className="text-lg text-muted" style={{ lineHeight: '1.9', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem', padding: '0 5px' }}>
               {about.summary}
             </p>
