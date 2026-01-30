@@ -1,14 +1,15 @@
 import styles from './page.module.css'
 import { portfolioData } from './data'
-import {
-  Brain,
+Brain,
   GraduationCap,
   Users,
   Mail,
   Linkedin,
   Globe,
   CheckCircle,
-  Monitor
+  Monitor,
+  Rocket,
+  ExternalLink
 } from 'lucide-react'
 import Image from 'next/image'
 
@@ -150,6 +151,95 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Mes Apps Pédago (Projects) Section */}
+      <section id="projects" className="section container">
+        <h2 className="section-title text-center">Mes Applications Pédago & Projets</h2>
+        <p className="text-center text-muted mb-12 max-w-2xl mx-auto">
+          Des outils concrets développés pour répondre aux besoins du terrain.<br />
+          Testez-les dès maintenant !
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          {portfolioData.projects?.map((project, idx) => (
+            <div key={idx} style={{
+              background: 'white',
+              borderRadius: '16px',
+              padding: '2rem',
+              boxShadow: '0 10px 30px -10px rgba(0,0,0,0.1)',
+              border: '1px solid #f1f5f9',
+              display: 'flex',
+              flexDirection: 'column',
+              transition: 'transform 0.2s',
+              height: '100%'
+            }}
+              className="hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div style={{
+                width: 50,
+                height: 50,
+                background: idx === 2 ? '#f1f5f9' : '#eff6ff',
+                borderRadius: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: idx === 2 ? '#64748b' : '#2563eb',
+                marginBottom: '1.5rem'
+              }}>
+                {idx === 2 ? <Rocket size={24} /> : <Monitor size={24} />}
+              </div>
+
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.75rem', color: '#1e293b' }}>
+                {project.title}
+              </h3>
+
+              <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6', flexGrow: 1 }}>
+                {project.description}
+              </p>
+
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '1.5rem' }}>
+                {project.tags.map((tag, tIdx) => (
+                  <span key={tIdx} style={{
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                    padding: '4px 10px',
+                    borderRadius: '99px',
+                    background: '#f8fafc',
+                    color: '#475569',
+                    border: '1px solid #e2e8f0'
+                  }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <a href={project.link} target={project.link.startsWith('http') ? "_blank" : "_self"} rel="noreferrer"
+                className="btn"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '0.75rem 1.5rem',
+                  borderRadius: '8px',
+                  fontWeight: 600,
+                  background: project.link === "#contact" ? 'transparent' : '#2563eb',
+                  color: project.link === "#contact" ? '#2563eb' : 'white',
+                  border: project.link === "#contact" ? '1px solid #2563eb' : 'none',
+                  textDecoration: 'none',
+                  gap: '8px',
+                  marginTop: 'auto'
+                }}
+              >
+                {project.link === "#contact" ? (
+                  <>Discuter d'un projet <Mail size={16} /></>
+                ) : (
+                  <>Voir le site <ExternalLink size={16} /></>
+                )}
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 

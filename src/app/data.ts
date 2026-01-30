@@ -7,7 +7,7 @@ export const portfolioData = {
         phone: "06 14 02 83 68",
         location: "Marseille et périphérie / Cassis",
         linkedin: "https://www.linkedin.com/in/jacques-giraudeau-71539020",
-        websites: ["jacquesgiraudeau.com"],
+        websites: ["jacquesgiraudeau.com", "blog.jacquesgiraudeau.com"],
         catchphrase: "Déployer un LMS ou former à l’IA ne pose pas de problème technique. Le vrai enjeu, c’est l’adoption par les équipes."
     },
     about: {
@@ -80,6 +80,26 @@ export const portfolioData = {
             school: "École Centrale de Lille",
             degree: "Certificat Gestion de Projet (MOOC)",
             year: "2013"
+        }
+    ],
+    projects: [
+        {
+            title: "ProfVirtuel (AppliComp NDRC)",
+            description: "Assistant pédagogique intelligent boosté à l'IA pour accompagner les étudiants et professeurs en BTS NDRC.",
+            link: "https://applicompndrc.vercel.app/",
+            tags: ["Next.js", "IA Gemini", "SaaS"]
+        },
+        {
+            title: "AppliProf NDRC",
+            description: "Application de suivi et de gestion pour les enseignants. Outil d'aide à l'évaluation et au pilotage.",
+            link: "https://appliprofndrc.onrender.com/",
+            tags: ["Web App", "Outil Métier"]
+        },
+        {
+            title: "Vos futurs projets...",
+            description: "Des solutions sur mesure pour digitaliser vos processus de formation. Discutons-en ensemble !",
+            link: "#contact",
+            tags: ["Sur Mesure", "Innovation"]
         }
     ]
 };
