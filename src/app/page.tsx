@@ -136,7 +136,7 @@ export default function Home() {
         <div className={styles.aboutGrid}>
           <div>
             <h2 className="section-title text-left" style={{ textAlign: 'left', marginBottom: '2rem' }}>À propos</h2>
-            <p className="text-lg text-muted" style={{ lineHeight: '1.9', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem' }}>
+            <p className="text-lg text-muted" style={{ lineHeight: '1.9', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem', padding: '0 5px' }}>
               {about.summary}
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
 
           <div id="skills">
-            <h3 className="text-2xl font-bold mb-6" style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Domaines d'Intervention</h3>
+            <h3 className="text-2xl font-bold mb-6" style={{ fontSize: '1.5rem', marginBottom: '1.5rem', textAlign: 'center' }}>Domaines d'Intervention</h3>
             <div style={{ display: 'grid', gap: '1rem' }}>
               <div className={styles.skillCard}>
                 <div className={styles.skillIcon}><Brain /></div>
@@ -175,7 +175,7 @@ export default function Home() {
       {/* Mes Apps Pédago (Projects) Section */}
       <section id="projects" className="section container">
         <h2 className="section-title text-center">Mes Applications Pédago & Projets</h2>
-        <p className="text-center text-muted mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted mb-12 max-w-2xl mx-auto" style={{ padding: '0 10px' }}>
           Des outils concrets développés pour répondre aux besoins du terrain.<br />
           Testez-les dès maintenant !
         </p>
