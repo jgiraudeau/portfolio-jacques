@@ -1,6 +1,7 @@
 import styles from './page.module.css'
 import { portfolioData } from './data'
-Brain,
+import {
+  Brain,
   GraduationCap,
   Users,
   Mail,
