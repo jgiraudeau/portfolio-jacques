@@ -332,13 +332,23 @@
   }
 
   .mobileMenuBtn {
-    display: block;
-    color: #0f172a;
-    /* Force dark color */
-    margin-right: -8px;
-    z-index: 1002;
-    /* Ensure above everything */
+    display: block !important;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: #000000 !important;
+    z-index: 99999 !important;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
+
 
   .nav {
     z-index: 1001;
