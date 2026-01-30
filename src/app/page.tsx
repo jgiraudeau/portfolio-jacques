@@ -25,7 +25,9 @@ export default function Home() {
           <div className={styles.navLinks}>
             <a href="#about" className={styles.navLink}>À propos</a>
             <a href="#skills" className={styles.navLink}>Compétences</a>
+            <a href="#projects" className={styles.navLink}>Projets</a>
             <a href="#experience" className={styles.navLink}>Parcours</a>
+            <a href="https://blog.jacquesgiraudeau.com" target="_blank" rel="noreferrer" className={styles.navLink}>Blog</a>
             <a href="#contact" className={styles.navLink}>Contact</a>
           </div>
           <a href="mailto:jacques.giraudeau@gmail.com" className="btn btn-primary" style={{ fontSize: '0.9rem' }}>
