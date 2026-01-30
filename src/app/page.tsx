@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styles from './page.module.css'
 import { portfolioData } from './data'
 import {
@@ -10,12 +11,17 @@ import {
   CheckCircle,
   Monitor,
   Rocket,
-  ExternalLink
+  ExternalLink,
+  Menu,
+  X
 } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
   const { personalInfo, about, experience, education } = portfolioData
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
     <main>
@@ -23,15 +29,22 @@ export default function Home() {
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
           <div className={styles.navLogo}>JG.</div>
-          <div className={styles.navLinks}>
-            <a href="#about" className={styles.navLink}>À propos</a>
-            <a href="#skills" className={styles.navLink}>Compétences</a>
-            <a href="#projects" className={styles.navLink}>Projets</a>
-            <a href="#experience" className={styles.navLink}>Parcours</a>
-            <a href="https://blog.jacquesgiraudeau.com" target="_blank" rel="noreferrer" className={styles.navLink}>Blog</a>
-            <a href="#contact" className={styles.navLink}>Contact</a>
+
+          {/* Mobile Toggle Button */}
+          <button className={styles.mobileMenuBtn} onClick={toggleMenu} aria-label="Menu">
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+
+          <div className={`${styles.navLinks} ${isMenuOpen ? styles.navActive : ''}`}>
+            <a href="#about" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>À propos</a>
+            <a href="#skills" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Compétences</a>
+            <a href="#projects" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Projets</a>
+            <a href="#experience" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Parcours</a>
+            <a href="https://blog.jacquesgiraudeau.com" target="_blank" rel="noreferrer" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Blog</a>
+            <a href="#contact" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Contact</a>
           </div>
-          <a href="mailto:jacques.giraudeau@gmail.com" className="btn btn-primary" style={{ fontSize: '0.9rem' }}>
+
+          <a href="mailto:jacques.giraudeau@gmail.com" className="btn btn-primary" style={{ fontSize: '0.9rem', display: isMenuOpen ? 'none' : 'flex' }}> {/* Hide CTA on mobile header if needed, or keep it */}
             Me Contacter
           </a>
         </div>
