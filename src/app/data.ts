@@ -84,6 +84,12 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "Évaluation CEJM",
+            description: "Plateforme collaborative de suivi des compétences. Permet la confrontation visuelle entre l'auto-évaluation de l'étudiant et la notation du formateur, basée sur des observables détaillés et des critères personnalisables.",
+            link: "https://eval-cejm-app.vercel.app/",
+            tags: ["Next.js", "Pédagogie", "Suivi Compétences"]
+        },
+        {
             title: "ProfVirtuel (AppliComp NDRC)",
             description: "Assistant pédagogique intelligent boosté à l'IA pour accompagner les étudiants et professeurs en BTS NDRC.",
             link: "https://applicompndrc.vercel.app/",
@@ -94,6 +100,18 @@ export const portfolioData = {
             description: "Application de suivi et de gestion pour les enseignants. Outil d'aide à l'évaluation et au pilotage.",
             link: "https://appliprofndrc.onrender.com/",
             tags: ["Web App", "Outil Métier"]
+        },
+        {
+            title: "Suivi CCF NDRC",
+            description: "Application complète de gestion et de suivi des Contrôles en Cours de Formation (CCF) pour le BTS NDRC. Permet la digitalisation des fiches E4 et E6, le dépôt de documents par les étudiants et l'évaluation par les professeurs.",
+            link: "https://ccfbts.vercel.app/", // Remplacez par l'URL réelle si différente
+            tags: ["Fullstack", "Next.js", "Digitalisation examen"]
+        },
+        {
+            title: "Échecs Calanques",
+            description: "Site vitrine moderne et dynamique pour le club d'échecs de Cassis. Présentation des activités, agenda des tournois et inscription en ligne, avec une identité visuelle forte.",
+            link: "https://echecs-calanques.fr/",
+            tags: ["Site Vitrine", "Design UI/UX", "Next.js"]
         },
         {
             title: "Vos futurs projets...",
