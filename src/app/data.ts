@@ -116,7 +116,7 @@ export const portfolioData = {
         {
             title: "NDRC Digital Skills",
             description: "Plateforme d'apprentissage et de développement des compétences numériques ciblée pour les étudiants du BTS NDRC.",
-            link: "https://applicompdigitndrc.vercel.app/",
+            link: "https://ndrc-skills.vercel.app/",
             tags: ["Next.js", "Compétences", "Numérique"]
         },
         {
