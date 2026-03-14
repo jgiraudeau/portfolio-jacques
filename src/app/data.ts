@@ -120,6 +120,18 @@ export const portfolioData = {
             tags: ["Next.js", "Compétences", "Numérique"]
         },
         {
+            title: "PostInsta",
+            description: "Plateforme IA de génération et gestion de contenus Instagram. Automatise la création de calendriers éditoriaux, légendes et images grâce à l'IA (Claude & Gemini). Idéal pour les créateurs de contenu et community managers.",
+            link: "https://postinsta.vercel.app/",
+            tags: ["Next.js", "IA Claude & Gemini", "SaaS", "Social Media"]
+        },
+        {
+            title: "Regata",
+            description: "Application de briefing tactique intelligent pour les régates à la voile. Croise les données météo Météo-France, les marées et la topographie pour générer des recommandations tactiques de course en temps réel.",
+            link: "https://regata-two.vercel.app/",
+            tags: ["Next.js", "IA Claude", "Météo", "Navigation"]
+        },
+        {
             title: "Vos futurs projets...",
             description: "Des solutions sur mesure pour digitaliser vos processus de formation. Discutons-en ensemble !",
             link: "#contact",
