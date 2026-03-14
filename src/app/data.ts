@@ -122,7 +122,7 @@ export const portfolioData = {
         {
             title: "PostInsta",
             description: "Plateforme IA de génération et gestion de contenus Instagram. Automatise la création de calendriers éditoriaux, légendes et images grâce à l'IA (Claude & Gemini). Idéal pour les créateurs de contenu et community managers.",
-            link: "https://postinsta.vercel.app/",
+            link: "https://postinsta-one.vercel.app/",
             tags: ["Next.js", "IA Claude & Gemini", "SaaS", "Social Media"]
         },
         {
