@@ -30,7 +30,16 @@ export default function Home() {
       {/* Navigation */}
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
-          <a href="#" className={styles.navLogo} style={{ textDecoration: 'none' }}>JG.</a>
+          <a href="#" className={styles.navLogo} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <Image 
+              src="/images/logo.png" 
+              alt="Jacques Giraudeau" 
+              width={120} 
+              height={66} 
+              style={{ objectFit: 'contain' }}
+              className={styles.logoImage}
+            />
+          </a>
 
           {/* Mobile Toggle Button */}
           <button className={styles.mobileMenuBtn} onClick={toggleMenu} aria-label="Menu">

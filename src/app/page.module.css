@@ -29,6 +29,20 @@
   z-index: 1001;
   /* Above mobile menu */
   position: relative;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navLogo:hover {
+  transform: scale(1.05);
+}
+
+.logoImage {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+  transition: filter 0.3s ease;
+}
+
+.logoImage:hover {
+  filter: drop-shadow(0 6px 12px rgba(37, 99, 235, 0.2));
 }
 
 .navLinks {
