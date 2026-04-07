@@ -86,7 +86,7 @@ export const portfolioData = {
         {
             title: "NDRC Atelier (Solution Digitale E5)",
             description: "Application 'tout-en-un' révolutionnaire pour le BTS NDRC. Elle fusionne la puissance du WHM Manager (création automatique de sites élèves) avec un tableau de bord de suivi des compétences WordPress/PrestaShop. Une plateforme unique pour automatiser l'infrastructure et piloter la réussite pédagogique.",
-            link: "https://ndrc-skills.vercel.app/",
+            link: "https://ndrc-atelier.vercel.app/",
             tags: ["Next.js", "Infrastructure WHM", "Suivi Pédagogique", "SaaS", "E-learning"]
         },
         {
