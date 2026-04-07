@@ -184,29 +184,31 @@ export default function Home() {
           {portfolioData.projects?.map((project, idx) => (
             <div key={idx} style={{
               background: 'white',
-              borderRadius: '16px',
-              padding: '2rem',
-              boxShadow: '0 10px 30px -10px rgba(0,0,0,0.1)',
-              border: '1px solid #f1f5f9',
+              borderRadius: 'var(--radius)',
+              padding: '2.5rem 2rem',
+              boxShadow: 'var(--shadow)',
+              border: '1px solid var(--border)',
               display: 'flex',
               flexDirection: 'column',
-              transition: 'transform 0.2s',
-              height: '100%'
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+              height: '100%',
+              position: 'relative',
+              overflow: 'hidden'
             }}
-              className="hover:-translate-y-2 transition-transform duration-300"
+              className="hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
             >
               <div style={{
-                width: 50,
-                height: 50,
-                background: idx === 2 ? '#f1f5f9' : '#eff6ff',
+                width: 52,
+                height: 52,
+                background: idx === 2 ? 'var(--bg-alt)' : 'rgba(37, 99, 235, 0.1)',
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: idx === 2 ? '#64748b' : '#2563eb',
+                color: idx === 2 ? 'var(--secondary)' : 'var(--primary)',
                 marginBottom: '1.5rem'
               }}>
-                {idx === 2 ? <Rocket size={24} /> : <Monitor size={24} />}
+                {idx === 2 ? <Rocket size={26} /> : <Monitor size={26} />}
               </div>
 
               <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.75rem', color: '#1e293b' }}>

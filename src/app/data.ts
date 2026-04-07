@@ -84,6 +84,18 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "NDRC Atelier (Solution Digitale E5)",
+            description: "Application 'tout-en-un' révolutionnaire pour le BTS NDRC. Elle fusionne la puissance du WHM Manager (création automatique de sites élèves) avec un tableau de bord de suivi des compétences WordPress/PrestaShop. Une plateforme unique pour automatiser l'infrastructure et piloter la réussite pédagogique.",
+            link: "https://ndrc-skills.vercel.app/",
+            tags: ["Next.js", "Infrastructure WHM", "Suivi Pédagogique", "SaaS", "E-learning"]
+        },
+        {
+            title: "WHM Manager",
+            description: "Gestionnaire d'infrastructures cPanel/WHM automatisé. Permet le provisioning rapide de comptes d'hébergement pour les apprenants, le clonage de sites WordPress/PrestaShop et la gestion centralisée du déploiement pédagogique.",
+            link: "https://whm-manager-production.up.railway.app/",
+            tags: ["Next.js", "API WHM", "Automatisation", "DevOps Pédagogique"]
+        },
+        {
             title: "Évaluation CEJM",
             description: "Plateforme collaborative de suivi des compétences. Permet la confrontation visuelle entre l'auto-évaluation de l'étudiant et la notation du formateur, basée sur des observables détaillés et des critères personnalisables.",
             link: "https://eval-cejm-app.vercel.app/",
@@ -104,7 +116,7 @@ export const portfolioData = {
         {
             title: "Suivi CCF NDRC",
             description: "Application complète de gestion et de suivi des Contrôles en Cours de Formation (CCF) pour le BTS NDRC. Permet la digitalisation des fiches E4 et E6, le dépôt de documents par les étudiants et l'évaluation par les professeurs.",
-            link: "https://ccfbts.vercel.app/", // Remplacez par l'URL réelle si différente
+            link: "https://ccfbts.vercel.app/",
             tags: ["Fullstack", "Next.js", "Digitalisation examen"]
         },
         {
@@ -112,12 +124,6 @@ export const portfolioData = {
             description: "Site vitrine moderne et dynamique pour le club d'échecs de Cassis. Présentation des activités, agenda des tournois et inscription en ligne, avec une identité visuelle forte.",
             link: "https://echecs-calanques.fr/",
             tags: ["Site Vitrine", "Design UI/UX", "Next.js"]
-        },
-        {
-            title: "NDRC Digital Skills",
-            description: "Plateforme d'apprentissage et de développement des compétences numériques ciblée pour les étudiants du BTS NDRC.",
-            link: "https://ndrc-skills.vercel.app/",
-            tags: ["Next.js", "Compétences", "Numérique"]
         },
         {
             title: "PostInsta",

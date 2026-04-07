@@ -4,12 +4,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: var(--glass);
+  backdrop-filter: blur(16px) saturate(180%);
   z-index: 1000;
-  border-bottom: 1px solid #e2e8f0;
-  padding: 1rem 0;
-  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navContainer {
@@ -139,11 +139,13 @@
   font-size: 3.5rem;
   line-height: 1.1;
   font-weight: 900;
-  background: linear-gradient(to right, #2563eb, #4f46e5);
+  background: var(--primary-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: block;
   margin-bottom: 1.5rem;
+  filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.1));
 }
 
 .subtitle {
@@ -211,15 +213,33 @@
 .skillCard {
   background: white;
   padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  border: 1px solid #f1f5f9;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.skillCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--primary-gradient);
+  transition: height 0.3s ease;
 }
 
 .skillCard:hover {
-  transform: translateY(-5px);
-  border-color: #3b82f6;
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.skillCard:hover::before {
+  height: 100%;
 }
 
 .skillIcon {
