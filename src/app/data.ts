@@ -84,6 +84,12 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "Full NDRC",
+            description: "La solution ultime pour le BTS NDRC. Une plateforme complète qui permet aux étudiants de maîtriser les 3 blocs de compétences (CCF E4, E6 et l'épreuve pratique E5B) sur WordPress ou PrestaShop. L'outil facilite le pilotage pour les enseignants tout en accompagnant chaque étudiant dans sa montée en compétence.",
+            link: "https://fullndrc.jacquesgiraudeau.com/",
+            tags: ["Next.js", "Full NDRC", "Évaluation CCF", "CMS (WP/Presta)", "SaaS"]
+        },
+        {
             title: "NDRC Atelier (Solution Digitale E5)",
             description: "Application 'tout-en-un' révolutionnaire pour le BTS NDRC. Elle fusionne la puissance du WHM Manager (création automatique de sites élèves) avec un tableau de bord de suivi des compétences WordPress/PrestaShop. Une plateforme unique pour automatiser l'infrastructure et piloter la réussite pédagogique.",
             link: "https://ndrc-atelier.vercel.app/",
