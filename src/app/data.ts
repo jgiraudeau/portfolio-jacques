@@ -96,6 +96,12 @@ export const portfolioData = {
             tags: ["Next.js", "Infrastructure WHM", "Suivi Pédagogique", "SaaS", "E-learning"]
         },
         {
+            title: "Assistant PrestaShop RAG",
+            description: "Assistant documentaire sécurisé pour les enseignants et étudiants BTS NDRC. Il interroge les supports PrestaShop indexés et restitue des réponses sourcées pour accompagner les manipulations en autonomie.",
+            link: "/assistant-prestashop",
+            tags: ["RAG", "PrestaShop", "BTS NDRC", "IA Pédagogique"]
+        },
+        {
             title: "WHM Manager",
             description: "Gestionnaire d'infrastructures cPanel/WHM automatisé. Permet le provisioning rapide de comptes d'hébergement pour les apprenants, le clonage de sites WordPress/PrestaShop et la gestion centralisée du déploiement pédagogique.",
             link: "https://whm-manager-production.up.railway.app/",
