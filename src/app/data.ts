@@ -102,6 +102,12 @@ export const portfolioData = {
             tags: ["RAG", "PrestaShop", "BTS NDRC", "IA Pédagogique"]
         },
         {
+            title: "Assistant WordPress RAG",
+            description: "Assistant documentaire sécurisé pour accompagner les étudiants sur WordPress, Astra, Spectra et Yoast SEO. Il répond à partir des tutoriels indexés et cite les sources utilisées.",
+            link: "/assistant-wordpress",
+            tags: ["RAG", "WordPress", "Astra", "Spectra"]
+        },
+        {
             title: "WHM Manager",
             description: "Gestionnaire d'infrastructures cPanel/WHM automatisé. Permet le provisioning rapide de comptes d'hébergement pour les apprenants, le clonage de sites WordPress/PrestaShop et la gestion centralisée du déploiement pédagogique.",
             link: "https://whm-manager-production.up.railway.app/",
