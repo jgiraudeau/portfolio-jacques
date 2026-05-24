@@ -84,6 +84,24 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "ParcoursForm",
+            description: "SaaS Next.js permettant aux formateurs de générer des parcours pédagogiques complets basés sur des compétences (RNCP/CQP). Création automatique de contenus (Cours, Quiz, Études de cas) via l'IA (Claude) et export en HTML standalone ou SCORM pour intégration LMS.",
+            link: "#contact",
+            tags: ["Next.js", "Supabase", "SaaS", "IA Pédagogique", "EdTech"]
+        },
+        {
+            title: "EduVideo Generator",
+            description: "Application d'automatisation de production vidéo pédagogique. Permet de générer des cours vidéo scénarisés de A à Z (slides HTML enrichis, voix de synthèse TTS, sous-titres) avec assemblage via FFmpeg.",
+            link: "https://eduvideo-production-3166.up.railway.app/",
+            tags: ["Python", "Streamlit", "FFmpeg", "OpenAI TTS", "Claude API"]
+        },
+        {
+            title: "Standard Téléphonique IA",
+            description: "Déploiement d'un assistant vocal intelligent (Sarah) agissant comme standard téléphonique (Twilio + Vapi.ai). Qualification des appels en langage naturel et intégration automatisée via n8n pour les rapports post-appels sur Telegram.",
+            link: "#contact",
+            tags: ["Vapi.ai", "Twilio", "n8n", "Automatisation", "IA Vocale"]
+        },
+        {
             title: "Full NDRC",
             description: "La solution ultime pour le BTS NDRC. Une plateforme complète qui permet aux étudiants de maîtriser les 3 blocs de compétences (CCF E4, E6 et l'épreuve pratique E5B) sur WordPress ou PrestaShop. L'outil facilite le pilotage pour les enseignants tout en accompagnant chaque étudiant dans sa montée en compétence.",
             link: "https://fullndrc.jacquesgiraudeau.com/",

@@ -1,0 +1,28 @@
+# Jacques Giraudeau - Expert Numérique & IA
+
+Jacques Giraudeau est un Professeur Agrégé et expert en Ingénierie de Formation spécialisé dans l'Intelligence Artificielle générative et les technologies du numérique pour l'éducation (EdTech).
+
+## Profil
+- **Nom:** Jacques Giraudeau
+- **Localisation:** Marseille / Cassis, France
+- **Expertises:** Ingénierie Pédagogique, IA Générative (Gemini, Claude, GPT), LMS (Moodle, Chamilo), Google Workspace for Education, BTS NDRC.
+- **Formation:** Agrégé Économie Gestion, Master 2 Ingénierie de la Formation à Distance (Rennes 1), KEDGE Business School.
+
+## Projets Phares (EdTech & IA)
+- **Full NDRC:** Plateforme complète pour le BTS NDRC (WordPress/PrestaShop).
+- **NDRC Atelier:** Solution SaaS fusionnant infrastructure WHM et suivi pédagogique.
+- **WHM Manager:** Automatisation de serveurs cPanel/WHM pour l'éducation.
+- **ProfVirtuel:** Assistant pédagogique intelligent utilisant l'IA Gemini.
+- **PostInsta:** Générateur de contenu Instagram assisté par IA.
+- **Regata:** Aide tactique à la navigation utilisant l'IA et les données météo.
+
+## Expérience
+- **2025-Présent:** Formateur Indépendant (Freelance) - Accompagnement IA & Numérique.
+- **1990-2025:** Professeur Agrégé Économie Gestion (Lycée Sully, Marseille).
+- **2013-2025:** Formateur d'Enseignants (ISFEC Institut Saint Cassien).
+
+## Contact
+- **Site:** https://www.jacquesgiraudeau.com
+- **Blog:** https://blog.jacquesgiraudeau.com
+- **LinkedIn:** https://www.linkedin.com/in/jacques-giraudeau-71539020
+- **Email:** jacques.giraudeau@gmail.com

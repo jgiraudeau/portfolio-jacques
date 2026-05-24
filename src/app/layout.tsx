@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
+  metadataBase: new URL('https://www.jacquesgiraudeau.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Jacques Giraudeau | Expert Pédagogie Numérique & IA',
     description: 'Accompagnement à la digitalisation des formations et adoption de l\'IA générative.',
@@ -80,7 +84,40 @@ export default function RootLayout({
       'https://www.linkedin.com/in/jacques-giraudeau-71539020',
       'https://blog.jacquesgiraudeau.com'
     ],
-    knowsAbout: ['Intelligence Artificielle', 'LMS', 'Moodle', 'Chamilo', 'BTS NDRC', 'Pédagogie']
+    knowsAbout: [
+      'Intelligence Artificielle', 
+      'IA Générative', 
+      'LMS', 
+      'Moodle', 
+      'Chamilo', 
+      'BTS NDRC', 
+      'Ingénierie Pédagogique',
+      'Digital Learning'
+    ],
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': 'Agrégation Économie Gestion Marketing'
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': 'Master 2 Ingénierie de la Formation à Distance'
+      }
+    ],
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        'name': 'Université Rennes 1'
+      },
+      {
+        '@type': 'CollegeOrUniversity',
+        'name': 'KEDGE Business School'
+      }
+    ],
+    worksFor: {
+      '@type': 'Organization',
+      'name': 'Indépendant / Freelance'
+    }
   }
 
   return (

@@ -191,7 +191,7 @@ export default function Home() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
           {portfolioData.projects?.map((project, idx) => (
-            <div key={idx} style={{
+            <article key={idx} style={{
               background: 'white',
               borderRadius: 'var(--radius)',
               padding: '2.5rem 2rem',
@@ -267,7 +267,7 @@ export default function Home() {
                   <>Voir le site <ExternalLink size={16} /></>
                 )}
               </a>
-            </div>
+            </article>
           ))}
         </div>
       </section>
@@ -280,7 +280,7 @@ export default function Home() {
 
           <div className={styles.timeline}>
             {experience.map((exp, idx) => (
-              <div key={idx} className={`${styles.timelineItem} fade-in`}>
+              <article key={idx} className={`${styles.timelineItem} fade-in`}>
                 <div className={styles.timelineMarker}></div>
                 <div className={styles.timelineContent}>
                   <div className={styles.timelineDate}>{exp.period}</div>
@@ -288,7 +288,7 @@ export default function Home() {
                   <h4>{exp.company} • {exp.location}</h4>
                   <p className="text-muted">{exp.description}</p>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
